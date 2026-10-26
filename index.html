@@ -4,103 +4,167 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Polityka prywatności aplikacji Mapa Marzeń.">
-  <meta name="robots" content="index, follow">
-  <title>Polityka prywatności — Mapa Marzeń</title>
+  <meta name="description" content="Polityka prywatności aplikacji Mapa Marzeń. Informacje o danych użytkowników, reklamach Google AdMob i prywatności.">
+  <meta name="theme-color" content="#f9a8d4">
+  <title>Polityka prywatności – Mapa Marzeń</title>
   <style>
     :root {
-      --pink: #d95791;
-      --pink-light: #fff0f6;
-      --ink: #332b32;
-      --muted: #716670;
-      --bg: #fffafd;
-      --line: #f0dce6;
+      --pink: #f9a8d4;
+      --pink-dark: #be185d;
+      --pink-light: #fff1f7;
+      --text: #352b32;
+      --muted: #6f626a;
+      --border: #f1dce7;
+      --white: #ffffff;
     }
-    * { box-sizing: border-box; }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      padding: 0;
+      background: #fff8fb;
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
       line-height: 1.75;
     }
+
     header {
       padding: 48px 20px 38px;
       text-align: center;
-      background: linear-gradient(135deg, #fff0f6, #f7efff);
-      border-bottom: 1px solid var(--line);
+      background: linear-gradient(135deg, #fce7f3, #f9a8d4);
+      border-bottom: 1px solid var(--border);
     }
+
     .logo {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 54px;
-      height: 54px;
-      margin-bottom: 12px;
-      border-radius: 18px;
-      background: white;
-      color: var(--pink);
-      font-size: 30px;
-      box-shadow: 0 4px 18px #b65b8318;
+      margin-bottom: 10px;
+      font-size: 42px;
     }
-    h1 {
-      margin: 0;
+
+    header h1 {
+      margin: 0 0 10px;
+      color: #831843;
       font-size: clamp(28px, 5vw, 40px);
-      line-height: 1.25;
-      letter-spacing: -1px;
+      line-height: 1.2;
     }
-    header p { margin: 12px 0 0; color: var(--muted); }
+
+    header p {
+      margin: 0;
+      color: #702044;
+    }
+
     main {
-      width: min(100% - 32px, 820px);
-      margin: 32px auto 60px;
+      width: min(860px, calc(100% - 32px));
+      margin: 32px auto 56px;
       padding: clamp(22px, 5vw, 44px);
-      background: white;
-      border: 1px solid var(--line);
+      background: var(--white);
+      border: 1px solid var(--border);
       border-radius: 20px;
-      box-shadow: 0 10px 35px #64334b08;
+      box-shadow: 0 8px 30px rgba(131, 24, 67, 0.06);
     }
-    .notice {
-      padding: 16px 18px;
+
+    .intro {
+      margin: 0 0 30px;
+      padding: 18px 20px;
       background: var(--pink-light);
       border-left: 4px solid var(--pink);
       border-radius: 8px;
-      margin-bottom: 30px;
     }
-    h2 { margin-top: 32px; margin-bottom: 8px; font-size: 21px; line-height: 1.4; }
-    p, li { font-size: 15px; }
-    a { color: #b52e70; overflow-wrap: anywhere; }
-    .updated { color: var(--muted); font-size: 13px; }
+
+    h2 {
+      margin: 34px 0 12px;
+      padding-bottom: 8px;
+      color: #9d174d;
+      font-size: 21px;
+      line-height: 1.4;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2:first-of-type {
+      margin-top: 24px;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 8px 0 18px;
+      padding-left: 25px;
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    a {
+      color: var(--pink-dark);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover {
+      color: #831843;
+    }
+
+    .updated {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
     footer {
       padding: 24px 16px;
-      text-align: center;
       color: var(--muted);
+      text-align: center;
       font-size: 13px;
-      border-top: 1px solid var(--line);
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 34px 16px 28px;
+      }
+
+      main {
+        width: calc(100% - 20px);
+        margin: 18px auto 32px;
+        padding: 22px 18px;
+        border-radius: 14px;
+      }
+
+      h2 {
+        font-size: 19px;
+      }
     }
   </style>
 </head>
+
 <body>
   <header>
-    <div class="logo" aria-hidden="true">♡</div>
+    <div class="logo" aria-hidden="true">🌸</div>
     <h1>Polityka prywatności</h1>
-    <p>Mapa Marzeń — Twoje cele, Twoja przestrzeń.</p>
+    <p>Aplikacja Mapa Marzeń</p>
+    <p class="updated">Wersja 1.0 · Data aktualizacji: 26 października 2026 r.</p>
   </header>
 
   <main>
-    <p class="updated">Wersja 1.0 · Data aktualizacji: 26 października 2026 r.</p>
-
-    <div class="notice">
-      Mapa Marzeń nie wymaga zakładania konta. Treści tworzone przez użytkownika
-      są przechowywane lokalnie na urządzeniu, zgodnie z funkcjonowaniem
-      Aplikacji. Usługi reklamowe mogą jednak przetwarzać określone dane techniczne.
-    </div>
+    <p class="intro">
+      Mapa Marzeń nie wymaga zakładania konta. Treści tworzone przez
+      użytkownika są przechowywane lokalnie na urządzeniu, zgodnie z
+      funkcjonowaniem Aplikacji. Usługi reklamowe mogą jednak przetwarzać
+      określone dane techniczne.
+    </p>
 
     <h2>1. Informacje ogólne</h2>
     <p>
       Niniejsza Polityka prywatności opisuje zasady przetwarzania danych
       w aplikacji mobilnej Mapa Marzeń, zwanej dalej „Aplikacją”.
-      Aplikacja umożliwia tworzenie i personalizowanie map marzeń, celów,
-      planów i inspiracji.
+      Aplikacja umożliwia tworzenie i personalizowanie map marzeń,
+      celów, planów i inspiracji.
     </p>
     <p>
       Korzystanie z Aplikacji nie wymaga rejestracji ani zakładania konta.
@@ -111,7 +175,7 @@
     <h2>2. Administrator danych</h2>
     <p>
       Administratorem danych osobowych w zakresie, w jakim samodzielnie
-      ustala cele i sposoby ich przetwarzania, jest:
+      ustala cele i sposoby ich przetwarzania, jest
       <strong>Katarzyna Skwiot</strong>.
     </p>
     <p>
@@ -122,9 +186,9 @@
     <h2>3. Dane tworzone przez użytkownika</h2>
     <p>
       Zdjęcia, teksty i inne elementy dodawane do mapy marzeń są
-      przechowywane lokalnie na urządzeniu użytkownika, zgodnie z aktualną
-      funkcjonalnością Aplikacji. Administrator nie prowadzi własnego
-      serwera do przechowywania tych treści.
+      przechowywane lokalnie na urządzeniu użytkownika, zgodnie
+      z aktualną funkcjonalnością Aplikacji. Administrator nie prowadzi
+      własnego serwera do przechowywania tych treści.
     </p>
     <p>
       Administrator nie otrzymuje treści map marzeń za pośrednictwem
@@ -201,10 +265,10 @@
       bezpieczeństwa, zapobiegania nadużyciom oraz diagnozowania błędów.
     </p>
     <p>
-      Podstawa prawna przetwarzania zależy od rodzaju danych, celu i podmiotu
-      dokonującego przetwarzania. W przypadkach, w których przepisy wymagają
-      zgody użytkownika, przetwarzanie powinno odbywać się po uzyskaniu
-      odpowiedniej zgody.
+      Podstawa prawna przetwarzania zależy od rodzaju danych, celu i
+      podmiotu dokonującego przetwarzania. W przypadkach, w których
+      przepisy wymagają zgody użytkownika, przetwarzanie powinno odbywać
+      się po uzyskaniu odpowiedniej zgody.
     </p>
 
     <h2>8. Odbiorcy danych</h2>
@@ -247,9 +311,9 @@
     <p>
       W zakresie, w jakim przepisy o ochronie danych osobowych mają
       zastosowanie, użytkownik może mieć prawo do dostępu do danych,
-      ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia
-      danych, wniesienia sprzeciwu wobec przetwarzania oraz wycofania zgody,
-      jeśli przetwarzanie odbywa się na jej podstawie.
+      ich sprostowania, usunięcia, ograniczenia przetwarzania,
+      przenoszenia danych, wniesienia sprzeciwu wobec przetwarzania
+      oraz wycofania zgody, jeśli przetwarzanie odbywa się na jej podstawie.
     </p>
     <p>
       Użytkownik może również wnieść skargę do właściwego organu
@@ -295,6 +359,8 @@
     </p>
   </main>
 
-  <footer>Mapa Marzeń · Polityka prywatności</footer>
+  <footer>
+    © 2026 Mapa Marzeń · Polityka prywatności
+  </footer>
 </body>
 </html>
